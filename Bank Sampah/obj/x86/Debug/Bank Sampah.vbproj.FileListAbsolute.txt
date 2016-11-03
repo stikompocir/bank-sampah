@@ -1,11 +1,19 @@
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\bin\Debug\Bank Sampah.exe
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\bin\Debug\Bank Sampah.pdb
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\bin\Debug\Bank Sampah.xml
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Master_Sampah.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.MasterNasabah.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Stok.resources
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Form1.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Masuk.resources
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Resources.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Transaksi.resources
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.vbproj.GenerateResource.Cache
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.exe
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.xml
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.pdb
-D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Stok.resources
-D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Masuk.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.example.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Penjualan.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\bin\Debug\Bank Sampah.exe.config
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.vbprojResolveAssemblyReference.cache
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Laporan_Master.resources

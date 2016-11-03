@@ -74,19 +74,19 @@ Partial Class Form1
         'UserToolStripMenuItem
         '
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.UserToolStripMenuItem.Text = "User"
         '
         'DataToolStripMenuItem
         '
         Me.DataToolStripMenuItem.Name = "DataToolStripMenuItem"
-        Me.DataToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.DataToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DataToolStripMenuItem.Text = "Data"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'LaporanToolStripMenuItem

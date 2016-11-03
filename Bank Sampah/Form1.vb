@@ -22,4 +22,10 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Y
             LoginToolStripMenuItem.Enabled = True
         End If
     End Sub
+
+    Private Sub UserToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UserToolStripMenuItem.Click
+        MasterNasabah.Show()
+        MasterNasabah.BringToFront()
+
+    End Sub
 End Class

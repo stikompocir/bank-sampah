@@ -434,13 +434,13 @@ Public Class DB_COMBO
 
     Private varItem() = Nothing
 
-    Private varNamaDatabase As String = "spk_psb"
+    Private varNamaDatabase As String = "bank_sampah"
     Private varNamaTabel() As String
     Private varNamaKolom() As String
 
     Private varNamaServer As String = "localhost"
     Private varNamaUser As String = "root"
-    Private varPassword As String = "root"
+    Private varPassword As String = ""
 
     Private varKoneksi As MySqlConnection
     Private varCON_STR As String
@@ -555,12 +555,12 @@ End Class
 Public Class DB_VIEW
     Private varItem() As ListView
 
-    Private varNamaDatabase As String = "spk_psb"
+    Private varNamaDatabase As String = "bank_sampah"
     Private varNamaKolom() As String
 
     Private varNamaServer As String = "localhost"
     Private varNamaUser As String = "root"
-    Private varPassword As String = "root"
+    Private varPassword As String = ""
 
     Private varKoneksi As MySqlConnection
     Private varCON_STR As String

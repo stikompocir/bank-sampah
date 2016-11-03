@@ -1,8 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Masuk
-    Dim conn As MySqlConnection
-    Dim myCommand As New MySqlCommand
+    'Dim conn As MySqlConnection
+    'Dim myCommand As New MySqlCommand
     Dim WithEvents daftar As New koneksi
 
     Private Sub btnLogin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
@@ -10,7 +10,7 @@ Public Class Masuk
         Dim myCommand As New MySqlCommand
 
         conn = New MySqlConnection
-        conn.ConnectionString = "server=localhost;user id=root;password=; database=bank_sampah"
+        conn.ConnectionString = "server=localhost;user id=root; database=bank_sampah"
 
         Try
             conn.Open()
@@ -33,7 +33,7 @@ Public Class Masuk
             txtpass.Text = ""
             txtiduser.Focus()
         Else
-            MsgBox("welcome ^.^" & "" & txtiduser.Text & "!", MsgBoxStyle.Information, "Succesful Login")
+            MsgBox("welcome ^.^" & " " & txtiduser.Text & "!", MsgBoxStyle.Information, "Succesful Login")
             txtiduser.Text = ""
             txtpass.Text = ""
             txtiduser.Focus()
