@@ -13,7 +13,7 @@
     <AssemblyName>Bank Sampah</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
   </PropertyGroup>
@@ -49,6 +49,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>business-info.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -83,6 +86,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data.vb" />
     <Compile Include="Database.vb" />
     <Compile Include="DataSet1.Designer.vb">
@@ -99,12 +114,41 @@
     <Compile Include="example.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="koneksi.vb" />
-    <Compile Include="Laporan Master.Designer.vb">
-      <DependentUpon>Laporan Master.vb</DependentUpon>
+    <Compile Include="Ganti Password.Designer.vb">
+      <DependentUpon>Ganti Password.vb</DependentUpon>
     </Compile>
-    <Compile Include="Laporan Master.vb">
+    <Compile Include="Ganti Password.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koneksi.vb" />
+    <Compile Include="Laporan Periodik1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Laporan Periodik1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan.Designer.vb">
+      <DependentUpon>Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPerio.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanPerio.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Harian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Laporan_Harian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan Nasabah.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Laporan Nasabah.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Master Sampah.Designer.vb">
       <DependentUpon>Master Sampah.vb</DependentUpon>
@@ -119,6 +163,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModulKoneksi.vb" />
+    <Compile Include="PengambilanTunai.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PengambilanTunai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pengambilan.Designer.vb">
+      <DependentUpon>Pengambilan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pengambilan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Penjualan.Designer.vb">
       <DependentUpon>Penjualan.vb</DependentUpon>
     </Compile>
@@ -167,17 +223,51 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="example.resx">
       <DependentUpon>example.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Laporan Master.resx">
-      <DependentUpon>Laporan Master.vb</DependentUpon>
+    <EmbeddedResource Include="Ganti Password.resx">
+      <DependentUpon>Ganti Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Periodik1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Laporan Periodik1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan.resx">
+      <DependentUpon>Laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPerio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanPerio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Harian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Laporan_Harian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Nasabah.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Laporan Nasabah.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Master Sampah.resx">
       <DependentUpon>Master Sampah.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterNasabah.resx">
       <DependentUpon>MasterNasabah.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PengambilanTunai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PengambilanTunai.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengambilan.resx">
+      <DependentUpon>Pengambilan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Penjualan.resx">
       <DependentUpon>Penjualan.vb</DependentUpon>
@@ -229,6 +319,38 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boss.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="business-info.ico" />
+    <None Include="Resources\Calendar.png" />
+    <None Include="Resources\Clipboard1.png" />
+    <None Include="Resources\Up-down.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\Delivery.png" />
+    <None Include="Resources\User group.png" />
+    <None Include="Resources\Shopping cart.png" />
+    <None Include="Resources\Database.png" />
+    <None Include="Resources\Taxi.png" />
+    <None Include="Resources\No-entry.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Clipboard.png" />
+    <None Include="Resources\Turn off.png" />
+    <None Include="Resources\ccc.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -93,7 +93,9 @@ Partial Class Masuk
         Me.Controls.Add(Me.txtiduser)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Masuk"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Masuk"
         Me.ResumeLayout(False)
         Me.PerformLayout()

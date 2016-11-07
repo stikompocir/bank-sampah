@@ -1,19 +1,32 @@
-﻿
+﻿Imports MySql.Data.MySqlClient
 
 Public Class MasterNasabah
 
+    Dim conn As MySqlConnection
+    Dim myCommand As MySqlCommand
+    Dim myReader As MySqlDataReader
     Dim WithEvents daftar As New koneksi
     Dim sql As String = "select * from nasabah order by id_nasabah"
+
+    Sub KoneksiDATA()
+        conn = New MySqlConnection
+        conn.ConnectionString = "server=localhost;user id=root; database=bank_sampah"
+        Try
+            conn.Open()
+        Catch ex As Exception
+            MsgBox("kesalahan koneksi")
+        End Try
+    End Sub
 
     Private Sub MasterNasabah_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         daftar.NamaDatabase = "bank_sampah"
         daftar.NamaTabel = "nasabah"
 
-        Dim des() As String = {"id_nasabah", "nama_nasabah", "alamat_nasabah", "no_telpon", "status"}
+        Dim des() As String = {"id_nasabah", "nama_nasabah", "alamat_nasabah", "saldo", "no_telpon", "status"}
         Dim va() = {TxtIdNsb, TxtNama, TxtAlmt, TxtTelp, TxtStatus}
 
-        Dim deslv() As String = {"id_nasabah", "nama_nasabah", "alamat_nasabah", "no_telpon", "status"}
-        Dim size() As Integer = {100, 100, 200, 200, 200}
+        Dim deslv() As String = {"id_nasabah", "nama_nasabah", "alamat_nasabah", "saldo", "no_telpon", "status"}
+        Dim size() As Integer = {100, 100, 200, 200, 200, 200}
 
         daftar.DeskripsiTAbel = des
         daftar.ObjekTabelValue = va
@@ -25,6 +38,22 @@ Public Class MasterNasabah
         TxtTelp.Enabled = False
         TxtStatus.Enabled = False
 
+
+    End Sub
+    Sub Otomatis()
+        KoneksiDATA()
+        myCommand = New MySqlCommand("select iD_NASABAH from nasabah where id_nasabah in(select max(id_nasabah) from nasabah) order by id_nasabah desc", conn)
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        Dim urutan As String
+        Dim hitung As Long
+        If Not myReader.HasRows Then
+            urutan = "NS" + "0001"
+        Else
+            hitung = Microsoft.VisualBasic.Right(myReader.GetString(0), 4) + 1
+            urutan = "NS" + Microsoft.VisualBasic.Right("0000" & hitung, 4)
+        End If
+        TxtIdNsb.Text = urutan
     End Sub
 
     Sub hapus()
@@ -38,12 +67,13 @@ Public Class MasterNasabah
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         hapus()
-        TxtIdNsb.Enabled = True
+        TxtIdNsb.Enabled = False
         TxtNama.Enabled = True
         TxtAlmt.Enabled = True
         TxtTelp.Enabled = True
         TxtStatus.Enabled = True
         TxtIdNsb.Focus()
+        Otomatis()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

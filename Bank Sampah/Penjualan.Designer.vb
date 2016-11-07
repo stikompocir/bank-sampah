@@ -261,6 +261,7 @@ Partial Class Penjualan
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Penjualan"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Penjualan"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -4,8 +4,9 @@
         dtgrid.Columns(0).HeaderText = "id_nasabah "
         dtgrid.Columns(1).HeaderText = "nama_nasabah"
         dtgrid.Columns(2).HeaderText = "alamat_nasabah"
-        dtgrid.Columns(3).HeaderText = "no_telpon"
-        dtgrid.Columns(4).HeaderText = "status"
+        dtgrid.Columns(3).HeaderText = "saldo"
+        dtgrid.Columns(4).HeaderText = "no_telpon"
+        dtgrid.Columns(5).HeaderText = "status"
 
         dtgrid.ReadOnly = True
         dtgrid.Columns(0).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
@@ -13,6 +14,7 @@
         dtgrid.Columns(2).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         dtgrid.Columns(3).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         dtgrid.Columns(4).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        dtgrid.Columns(5).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         dtgrid.Columns(5).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
     End Sub
     Public Sub DataGrid_LstSampah(ByVal sql As String, ByVal dtgrid As DataGridView)

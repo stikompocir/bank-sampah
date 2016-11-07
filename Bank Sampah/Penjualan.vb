@@ -195,7 +195,7 @@ Public Class Penjualan
             MsgBox("Data belum lengkap")
         End If
         Dim setoran As String
-        setoran = "insert into setor_pengepul values ('" & LblFaktur.Text & "','" & LblTanggal.Text & "','" & TextId.Text & "','A001','" & LabelJumlah.Text & "','" & LabelTotal.Text & "')"
+        setoran = "insert into setor_pengepul values ('" & LblFaktur.Text & "','" & LblTanggal.Text & "','" & TextId.Text & "','" & Form1.panel1.Text & "','" & LabelJumlah.Text & "','" & LabelTotal.Text & "')"
         myCommand = New MySqlCommand(setoran, conn)
         myCommand.ExecuteNonQuery()
 

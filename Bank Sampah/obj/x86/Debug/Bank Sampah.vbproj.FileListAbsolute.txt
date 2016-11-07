@@ -16,4 +16,6 @@ D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.example.
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Penjualan.resources
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\bin\Debug\Bank Sampah.exe.config
 D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank Sampah.vbprojResolveAssemblyReference.cache
-D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Laporan_Master.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Pengambilan.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Ganti_Password.resources
+D:\Programming\VB.net\Bank Sampah\Bank Sampah\obj\x86\Debug\Bank_Sampah.Laporan.resources

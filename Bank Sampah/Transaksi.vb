@@ -200,7 +200,7 @@ Public Class Transaksi
         myCommand.ExecuteNonQuery()
 
         For baris As Integer = 0 To DGV.RowCount - 2
-            Call Koneksi()
+            'Call Koneksi()
             Dim simpandetail As String
 
             simpandetail = "insert into detail_setor values ('" & LblFaktur.Text & "','" & DGV.Rows(baris).Cells(0).Value & "'," & DGV.Rows(baris).Cells(2).Value & "," & DGV.Rows(baris).Cells(3).Value & "," & DGV.Rows(baris).Cells(4).Value & ")"
@@ -215,9 +215,20 @@ Public Class Transaksi
                 Dim tambahStok As String
                 tambahStok = "update sampah set stok = " & myReader.Item("stok") + DGV.Rows(baris).Cells(3).Value & " where id_sampah = '" & DGV.Rows(baris).Cells(0).Value & "'"
                 myCommand = New MySqlCommand(tambahStok, conn)
-                myCommand.ExecuteReader()
+                myCommand.ExecuteNonQuery()
             End If
         Next
+
+        myCommand = New MySqlCommand("select * from nasabah where id_nasabah = '" & TextId.Text & "'", conn)
+        myReader = myCommand.ExecuteReader
+        myReader.Read()
+        If myReader.HasRows Then
+            Call Koneksi()
+            Dim tambahSaldo As String
+            tambahSaldo = "update nasabah set saldo = " & myReader.Item("saldo") + Val(LabelTotal.Text) & " where id_nasabah ='" & TextId.Text & "'"
+            myCommand = New MySqlCommand(tambahSaldo, conn)
+            myCommand.ExecuteNonQuery()
+        End If
         Call Bersihkan()
         Call FakturOtomatis()
         LblTanggal.Text = Today

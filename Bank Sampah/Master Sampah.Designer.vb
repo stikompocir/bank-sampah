@@ -24,11 +24,9 @@ Partial Class Master_Sampah
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TxtIdSampah = New System.Windows.Forms.TextBox()
-        Me.TxtNamaSampah = New System.Windows.Forms.TextBox()
         Me.CmbJenisSampah = New System.Windows.Forms.ComboBox()
         Me.TxtSetor = New System.Windows.Forms.TextBox()
         Me.TxtBeli = New System.Windows.Forms.TextBox()
@@ -39,6 +37,8 @@ Partial Class Master_Sampah
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.TxtNamaSampah = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,21 +55,11 @@ Partial Class Master_Sampah
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(24, 96)
+        Me.Label2.Location = New System.Drawing.Point(24, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Jenis Sampah"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(24, 65)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Nama Sampah"
         '
         'Label5
         '
@@ -93,24 +83,18 @@ Partial Class Master_Sampah
         '
         'TxtIdSampah
         '
-        Me.TxtIdSampah.Location = New System.Drawing.Point(127, 31)
+        Me.TxtIdSampah.Location = New System.Drawing.Point(129, 31)
         Me.TxtIdSampah.Multiline = True
         Me.TxtIdSampah.Name = "TxtIdSampah"
         Me.TxtIdSampah.Size = New System.Drawing.Size(201, 27)
         Me.TxtIdSampah.TabIndex = 6
         '
-        'TxtNamaSampah
-        '
-        Me.TxtNamaSampah.Location = New System.Drawing.Point(127, 62)
-        Me.TxtNamaSampah.Multiline = True
-        Me.TxtNamaSampah.Name = "TxtNamaSampah"
-        Me.TxtNamaSampah.Size = New System.Drawing.Size(201, 27)
-        Me.TxtNamaSampah.TabIndex = 7
-        '
         'CmbJenisSampah
         '
+        Me.CmbJenisSampah.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbJenisSampah.FormattingEnabled = True
-        Me.CmbJenisSampah.Location = New System.Drawing.Point(127, 93)
+        Me.CmbJenisSampah.Items.AddRange(New Object() {"Kertas", "Plastik", "Besi", "Alumunium", "Kaleng"})
+        Me.CmbJenisSampah.Location = New System.Drawing.Point(129, 62)
         Me.CmbJenisSampah.Name = "CmbJenisSampah"
         Me.CmbJenisSampah.Size = New System.Drawing.Size(121, 21)
         Me.CmbJenisSampah.TabIndex = 8
@@ -192,11 +176,31 @@ Partial Class Master_Sampah
         Me.Button6.Text = "Cari"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'TxtNamaSampah
+        '
+        Me.TxtNamaSampah.Location = New System.Drawing.Point(129, 88)
+        Me.TxtNamaSampah.Multiline = True
+        Me.TxtNamaSampah.Name = "TxtNamaSampah"
+        Me.TxtNamaSampah.Size = New System.Drawing.Size(201, 27)
+        Me.TxtNamaSampah.TabIndex = 21
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(26, 91)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(88, 13)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Nama Sampah"
+        '
         'Master_Sampah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 430)
+        Me.Controls.Add(Me.TxtNamaSampah)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Button4)
@@ -207,11 +211,9 @@ Partial Class Master_Sampah
         Me.Controls.Add(Me.TxtBeli)
         Me.Controls.Add(Me.TxtSetor)
         Me.Controls.Add(Me.CmbJenisSampah)
-        Me.Controls.Add(Me.TxtNamaSampah)
         Me.Controls.Add(Me.TxtIdSampah)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Master_Sampah"
@@ -222,11 +224,9 @@ Partial Class Master_Sampah
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents TxtIdSampah As System.Windows.Forms.TextBox
-    Friend WithEvents TxtNamaSampah As System.Windows.Forms.TextBox
     Friend WithEvents CmbJenisSampah As System.Windows.Forms.ComboBox
     Friend WithEvents TxtSetor As System.Windows.Forms.TextBox
     Friend WithEvents TxtBeli As System.Windows.Forms.TextBox
@@ -237,4 +237,6 @@ Partial Class Master_Sampah
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents TxtNamaSampah As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
