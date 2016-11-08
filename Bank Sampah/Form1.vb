@@ -61,4 +61,8 @@
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
         Laporan.Show()
     End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        Ganti_Password.Show()
+    End Sub
 End Class

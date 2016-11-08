@@ -5,6 +5,7 @@ Public Class Master_Sampah
     Dim conn As MySqlConnection
     Dim myCommand As MySqlCommand
     Dim myReader As MySqlDataReader
+    Dim myAdapter As New MySqlDataAdapter
     Dim WithEvents daftar As New koneksi
     Dim sql As String = "select * from sampah order by id_sampah"
 

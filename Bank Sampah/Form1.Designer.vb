@@ -41,6 +41,7 @@ Partial Class Form1
         Me.panel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.panel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.panel3 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -68,7 +69,7 @@ Partial Class Form1
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.Button12)
-        Me.GroupBox5.Location = New System.Drawing.Point(546, 8)
+        Me.GroupBox5.Location = New System.Drawing.Point(619, 8)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(88, 89)
         Me.GroupBox5.TabIndex = 5
@@ -96,7 +97,7 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.Button7)
         Me.GroupBox4.Controls.Add(Me.Button5)
         Me.GroupBox4.Controls.Add(Me.Button6)
-        Me.GroupBox4.Location = New System.Drawing.Point(346, 8)
+        Me.GroupBox4.Location = New System.Drawing.Point(419, 8)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(199, 89)
         Me.GroupBox4.TabIndex = 4
@@ -154,7 +155,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Button11)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.Button4)
-        Me.GroupBox3.Location = New System.Drawing.Point(130, 8)
+        Me.GroupBox3.Location = New System.Drawing.Point(203, 8)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(215, 89)
         Me.GroupBox3.TabIndex = 3
@@ -209,11 +210,12 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Location = New System.Drawing.Point(5, 8)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(124, 89)
+        Me.GroupBox2.Size = New System.Drawing.Size(192, 89)
         Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "File"
@@ -275,6 +277,21 @@ Partial Class Form1
         Me.panel3.Size = New System.Drawing.Size(42, 17)
         Me.panel3.Text = "panel3"
         '
+        'Button8
+        '
+        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Image = Global.Bank_Sampah.My.Resources.Resources.Male
+        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button8.Location = New System.Drawing.Point(124, 11)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(68, 70)
+        Me.Button8.TabIndex = 3
+        Me.Button8.Text = "Ganti Password"
+        Me.Button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -317,5 +334,6 @@ Partial Class Form1
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
 
 End Class

@@ -35,8 +35,6 @@ Partial Class Master_Sampah
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.TxtNamaSampah = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -159,23 +157,6 @@ Partial Class Master_Sampah
         Me.Button4.Text = "Keluar"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(380, 110)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(201, 27)
-        Me.TextBox4.TabIndex = 18
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(582, 110)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(94, 26)
-        Me.Button6.TabIndex = 19
-        Me.Button6.Text = "Cari"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'TxtNamaSampah
         '
         Me.TxtNamaSampah.Location = New System.Drawing.Point(129, 88)
@@ -201,8 +182,6 @@ Partial Class Master_Sampah
         Me.ClientSize = New System.Drawing.Size(731, 430)
         Me.Controls.Add(Me.TxtNamaSampah)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -235,8 +214,6 @@ Partial Class Master_Sampah
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents TxtNamaSampah As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

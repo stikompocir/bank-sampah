@@ -7,25 +7,31 @@ Public Class Ganti_Password
     Dim myAdapter As New MySqlDataAdapter
     Dim myReader As MySqlDataReader
 
-    Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+    Sub Koneksi()
+        conn = New MySqlConnection
+        conn.ConnectionString = "server=localhost;user id=root; database=bank_sampah"
+        Try
+            conn.Open()
+        Catch ex As Exception
+            MsgBox("kesalahan koneksi")
+        End Try
+    End Sub
+
+    Private Sub Ganti_Password_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
         If e.KeyChar = Chr(13) Then
-            myCommand = New MySqlCommand("select * from petugas where nama_petugas='" & TextBox1.Text & "' and kode_petugas='" & Form1.panel1.Text & "'", conn)
-            myReader = myCommand.ExecuteReader
-            myReader.Read()
-            If myReader.HasRows Then
-                TextBox2.Enabled = True
-                TextBox2.Focus()
-            Else
-                MsgBox("anda tidak berhak mengganti password disini !!")
-                TextBox1.Focus()
-            End If
+            TextBox2.Focus()
         End If
     End Sub
 
     Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
         If e.KeyChar = Chr(13) Then
-            myCommand = New MySqlCommand("select * from petugas where nama_petugas ='" & Form1.panel2.Text & "'and password_petugas='" & TextBox2.Text & "'", conn)
-            myReader = myCommand.ExecuteReader
+            Koneksi()
+            myCommand = New MySqlCommand("select * from petugas where nama_petugas ='" & TextBox1.Text & "'and password_petugas='" & TextBox2.Text & "'", conn)
+            myReader = myCommand.ExecuteReader()
             myReader.Read()
             If myReader.HasRows Then
                 TextBox3.Enabled = True

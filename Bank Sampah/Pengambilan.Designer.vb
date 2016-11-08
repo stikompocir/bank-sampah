@@ -155,7 +155,7 @@ Partial Class Pengambilan
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(100, 20)
         Me.Label2.TabIndex = 19
-        Me.Label2.Text = "Nomor Anggota"
+        Me.Label2.Text = "Id Anggota"
         '
         'Label1
         '

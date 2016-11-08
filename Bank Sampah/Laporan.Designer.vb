@@ -23,6 +23,9 @@ Partial Class Laporan
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.DTP4 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.DTP3 = New System.Windows.Forms.DateTimePicker()
@@ -37,12 +40,14 @@ Partial Class Laporan
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Laporan_Harian1 = New Bank_Sampah.Laporan_Harian()
-        Me.CRV = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.PengambilanTunai1 = New Bank_Sampah.PengambilanTunai()
         Me.CrystalReport11 = New Bank_Sampah.CrystalReport1()
         Me.Laporan_Periodik11 = New Bank_Sampah.Laporan_Periodik1()
         Me.CrystalReport21 = New Bank_Sampah.CrystalReport2()
-        Me.PengambilanTunai1 = New Bank_Sampah.PengambilanTunai()
+        Me.CRV = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.LaporanBulanan1 = New Bank_Sampah.LaporanBulanan()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -51,6 +56,7 @@ Partial Class Laporan
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.GroupBox6)
         Me.GroupBox1.Controls.Add(Me.GroupBox5)
         Me.GroupBox1.Controls.Add(Me.GroupBox4)
         Me.GroupBox1.Controls.Add(Me.GroupBox3)
@@ -61,6 +67,37 @@ Partial Class Laporan
         Me.GroupBox1.Size = New System.Drawing.Size(870, 121)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.Button7)
+        Me.GroupBox6.Controls.Add(Me.DTP4)
+        Me.GroupBox6.Location = New System.Drawing.Point(592, 12)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(129, 87)
+        Me.GroupBox6.TabIndex = 5
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Laporan Bulanan"
+        '
+        'Button7
+        '
+        Me.Button7.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button7.Location = New System.Drawing.Point(3, 61)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(123, 23)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "Tampil"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'DTP4
+        '
+        Me.DTP4.CustomFormat = "MMMMM yyyy"
+        Me.DTP4.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DTP4.Location = New System.Drawing.Point(6, 17)
+        Me.DTP4.Name = "DTP4"
+        Me.DTP4.ShowUpDown = True
+        Me.DTP4.Size = New System.Drawing.Size(120, 20)
+        Me.DTP4.TabIndex = 0
         '
         'GroupBox5
         '
@@ -195,7 +232,7 @@ Partial Class Laporan
         Me.CRV.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CRV.Location = New System.Drawing.Point(0, 121)
         Me.CRV.Name = "CRV"
-        Me.CRV.ReportSource = Me.PengambilanTunai1
+        Me.CRV.ReportSource = Me.LaporanBulanan1
         Me.CRV.Size = New System.Drawing.Size(870, 362)
         Me.CRV.TabIndex = 1
         Me.CRV.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
@@ -211,6 +248,7 @@ Partial Class Laporan
         Me.Text = "Laporan"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
@@ -238,4 +276,8 @@ Partial Class Laporan
     Friend WithEvents CrystalReport11 As Bank_Sampah.CrystalReport1
     Friend WithEvents CrystalReport21 As Bank_Sampah.CrystalReport2
     Friend WithEvents PengambilanTunai1 As Bank_Sampah.PengambilanTunai
+    Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents DTP4 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents LaporanBulanan1 As Bank_Sampah.LaporanBulanan
 End Class

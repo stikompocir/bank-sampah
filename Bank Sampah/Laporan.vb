@@ -31,4 +31,10 @@
     Private Sub CRV_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CRV.Load
         CRV.RefreshReport()
     End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        CRV.SelectionFormula = "month({setor_nasabah1.tanggal}) = (" & Month(DTP4.Text) & ") and year({setor_nasabah1.tanggal}) = (" & Year(DTP4.Text) & ")"
+        CRV.ReportSource = LaporanBulanan1
+        CRV.RefreshReport()
+    End Sub
 End Class
