@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bank_Sampah.koneksi">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Bank_Sampah.koneksi.enumAksi" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>koneksi.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEDAB0gAmUBQCICgJBgBZABIAQAMAhCgVAUEAAAgQg=</HashCode>
+      <FileName>koneksi.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank_Sampah.DB_COMBO">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABABAAACIBAAAAAIAgAAQBIEAAAIJCgBAEAAAAAQA=</HashCode>
+      <FileName>koneksi.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bank_Sampah.DB_VIEW">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABIBAAECIBAAAAAIAgAAQBMEAAAAICgBAkAAAAAQA=</HashCode>
+      <FileName>koneksi.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="Bank_Sampah.DB_FUNGSI">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>koneksi.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

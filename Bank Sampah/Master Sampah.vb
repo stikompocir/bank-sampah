@@ -22,13 +22,13 @@ Public Class Master_Sampah
     Private Sub Master_Sampah_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         daftar.NamaDatabase = "bank_sampah"
         daftar.NamaTabel = "sampah"
-        Dim SETOKSAMPAH As Integer = 0
+        'Dim SETOKSAMPAH As Integer = 0
 
-        Dim des() As String = {"id_sampah", "nama_sampah", "harga_beli", "harga_setor"}
-        Dim va() = {TxtIdSampah, TxtNamaSampah, TxtBeli, TxtSetor, SETOKSAMPAH}
+        Dim des() As String = {"id_sampah", "nama_sampah", "harga_beli", "harga_setor", "stok"}
+        Dim va() = {TxtIdSampah, TxtNamaSampah, TxtBeli, TxtSetor, TxtStok}
 
-        Dim deslv() As String = {"id_sampah", "nama_sampah", "harga_beli", "harga_setor"}
-        Dim size() As Integer = {100, 200, 200, 200}
+        Dim deslv() As String = {"id_sampah", "nama_sampah", "harga_beli", "harga_setor", "stok"}
+        Dim size() As Integer = {100, 150, 150, 150, 150}
         Dim upper As String = TxtNamaSampah.Text
         daftar.DeskripsiTAbel = des
         daftar.ObjekTabelValue = va
@@ -48,6 +48,7 @@ Public Class Master_Sampah
         TxtNamaSampah.Clear()
         TxtBeli.Clear()
         TxtSetor.Clear()
+        TxtStok.Clear()
         TxtIdSampah.Focus()
     End Sub
 
@@ -77,15 +78,17 @@ Public Class Master_Sampah
         If LstSampah.SelectedItems.Count = 1 Then
             With LstSampah.SelectedItems(0)
                 TxtIdSampah.Text = .SubItems(1).Text
-                CmbJenisSampah.Text = .SubItems(2).Text
-                TxtNamaSampah.Text = .SubItems(3).Text
+                'CmbJenisSampah.Text = .SubItems(2).Text
+                TxtNamaSampah.Text = .SubItems(2).Text
                 TxtBeli.Text = .SubItems(3).Text
                 TxtSetor.Text = .SubItems(4).Text
+                TxtStok.Text = .SubItems(5).Text
             End With
 
         End If
         TxtIdSampah.Enabled = False
-        CmbJenisSampah.Enabled = True
+        TxtStok.Enabled = False
+        CmbJenisSampah.Enabled = False
         TxtNamaSampah.Enabled = True
         TxtBeli.Enabled = True
         TxtSetor.Enabled = True
@@ -125,5 +128,29 @@ Public Class Master_Sampah
         If e.KeyChar = Chr(13) Then
             TxtSetor.Focus()
         End If
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        daftar.Aksi = koneksi.enumAksi.Edit
+        hapus()
+    End Sub
+
+    Private Sub daftar_Setelah_Data_Teredit(ByVal Pesan As String, ByVal isError As Boolean) Handles daftar.Setelah_Data_Teredit
+
+        MsgBox(Pesan)
+        daftar.ListViewKu.SegarkanSemua()
+
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        daftar.ListViewKu.SegarkanSemua()
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Me.Close()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TxtStok.TextChanged
+
     End Sub
 End Class

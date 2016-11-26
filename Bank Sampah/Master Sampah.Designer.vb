@@ -37,6 +37,9 @@ Partial Class Master_Sampah
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TxtNamaSampah = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.TxtStok = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -123,7 +126,7 @@ Partial Class Master_Sampah
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(129, 382)
+        Me.Button1.Location = New System.Drawing.Point(231, 382)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(96, 33)
         Me.Button1.TabIndex = 13
@@ -132,7 +135,7 @@ Partial Class Master_Sampah
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(231, 382)
+        Me.Button2.Location = New System.Drawing.Point(333, 382)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 33)
         Me.Button2.TabIndex = 14
@@ -141,7 +144,7 @@ Partial Class Master_Sampah
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(333, 382)
+        Me.Button3.Location = New System.Drawing.Point(435, 382)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(96, 33)
         Me.Button3.TabIndex = 15
@@ -150,7 +153,7 @@ Partial Class Master_Sampah
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(435, 382)
+        Me.Button4.Location = New System.Drawing.Point(623, 382)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(96, 33)
         Me.Button4.TabIndex = 16
@@ -175,11 +178,41 @@ Partial Class Master_Sampah
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Nama Sampah"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(537, 382)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(81, 33)
+        Me.Button5.TabIndex = 22
+        Me.Button5.Text = "Batal"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'TxtStok
+        '
+        Me.TxtStok.Location = New System.Drawing.Point(475, 95)
+        Me.TxtStok.Multiline = True
+        Me.TxtStok.Name = "TxtStok"
+        Me.TxtStok.Size = New System.Drawing.Size(201, 27)
+        Me.TxtStok.TabIndex = 24
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(386, 98)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(33, 13)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "Stok"
+        '
         'Master_Sampah
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(731, 430)
+        Me.Controls.Add(Me.TxtStok)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.TxtNamaSampah)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
@@ -216,4 +249,7 @@ Partial Class Master_Sampah
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents TxtNamaSampah As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents TxtStok As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

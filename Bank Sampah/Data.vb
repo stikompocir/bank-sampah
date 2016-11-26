@@ -23,6 +23,7 @@
         dtgrid.Columns(2).HeaderText = "nama_sampah"
         dtgrid.Columns(3).HeaderText = "harga_setor"
         dtgrid.Columns(4).HeaderText = "harga_jual"
+        dtgrid.Columns(5).HeaderText = "stok"
 
         dtgrid.ReadOnly = True
         dtgrid.Columns(0).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader
@@ -31,14 +32,6 @@
         dtgrid.Columns(3).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         dtgrid.Columns(4).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
         dtgrid.Columns(5).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        dtgrid.Columns(5).AutoSizeMode = Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
     End Sub
-
-    Public Sub DataGrid_ListView1(ByVal sql As String, ByVal dtgrid As DataGridView)
-        dtgrid.Columns(0).HeaderText = "id_sampah"
-        dtgrid.Columns(1).HeaderText = "id_jenis_sampah"
-        dtgrid.Columns(2).HeaderText = "nama_sampah"
-        dtgrid.Columns(3).HeaderText = "harga_setor"
-        dtgrid.Columns(4).HeaderText = "harga_jual"
-    End Sub
-
 End Class

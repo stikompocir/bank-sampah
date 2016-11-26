@@ -35,7 +35,6 @@ Partial Class Laporan
         Me.DTP = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -72,7 +71,7 @@ Partial Class Laporan
         '
         Me.GroupBox6.Controls.Add(Me.Button7)
         Me.GroupBox6.Controls.Add(Me.DTP4)
-        Me.GroupBox6.Location = New System.Drawing.Point(592, 12)
+        Me.GroupBox6.Location = New System.Drawing.Point(515, 12)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(129, 87)
         Me.GroupBox6.TabIndex = 5
@@ -103,7 +102,7 @@ Partial Class Laporan
         '
         Me.GroupBox5.Controls.Add(Me.Button6)
         Me.GroupBox5.Controls.Add(Me.DTP3)
-        Me.GroupBox5.Location = New System.Drawing.Point(361, 12)
+        Me.GroupBox5.Location = New System.Drawing.Point(284, 12)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(113, 87)
         Me.GroupBox5.TabIndex = 4
@@ -133,7 +132,7 @@ Partial Class Laporan
         Me.GroupBox4.Controls.Add(Me.DTP2)
         Me.GroupBox4.Controls.Add(Me.Button5)
         Me.GroupBox4.Controls.Add(Me.DTP)
-        Me.GroupBox4.Location = New System.Drawing.Point(477, 12)
+        Me.GroupBox4.Location = New System.Drawing.Point(400, 12)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(113, 87)
         Me.GroupBox4.TabIndex = 3
@@ -169,10 +168,9 @@ Partial Class Laporan
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Button3)
-        Me.GroupBox3.Controls.Add(Me.Button4)
         Me.GroupBox3.Location = New System.Drawing.Point(184, 12)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(171, 87)
+        Me.GroupBox3.Size = New System.Drawing.Size(94, 87)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pengambilan"
@@ -185,15 +183,6 @@ Partial Class Laporan
         Me.Button3.TabIndex = 1
         Me.Button3.Text = "Tunai"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(81, 18)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 62)
-        Me.Button4.TabIndex = 0
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -259,7 +248,6 @@ Partial Class Laporan
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
